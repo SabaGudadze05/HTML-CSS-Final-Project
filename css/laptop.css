@@ -44,4 +44,20 @@
   }
   /* section1 */
 
+  /* section_two */
+  .section_two {
+    padding: 96px 0 96px 32px;
+  }
+  .section_two_cards_section{
+    overflow-x: scroll;
+  }
+  .card_article_index{
+    flex: 1 0 272px;
+    padding: 0 0 16px;
+    gap: 24px;
+  }
+  .card_article_index_section{
+    margin-inline: 8px;
+  }
+
 }

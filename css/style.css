@@ -90,7 +90,6 @@ header {
   gap: 24px;
   align-items: center;
   cursor: pointer;
-  
 }
 .section_one_section_a {
   font-family: "Inter", sans-serif;
@@ -101,7 +100,6 @@ header {
   transition: all 0.3s linear;
 }
 .section_one_section_a_span {
-
   color: rgba(5, 188, 202, 1);
   transition: all 0.3s linear;
 }
@@ -124,9 +122,176 @@ header {
   color: rgba(255, 255, 255, 1);
   letter-spacing: 3px;
 }
-.section_one_section:hover .section_one_button{
+.section_one_section:hover .section_one_button {
   background-color: rgba(217, 217, 217, 1);
   color: rgba(196, 106, 43, 1);
   width: 44px;
   font-size: 20px;
+}
+/* section_two */
+.section_two {
+  padding: 96px 94px;
+  background-color: rgba(26, 26, 26, 1);
+}
+.section_two_header {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+  color: rgba(5, 188, 202, 1);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  margin-bottom: 72px;
+}
+/* გავაორმაგე offset, რადგან ფიგმა მიზომავდა line-heightad ,როდესაც 8 პიქსელი დავწერე, აშკარად მიკრული იყო ტექსტზე, ახლა ერთი ერთში გავს ფიგმას დიზაინს. ასევე მარჯინ ბოთომიც 72 პიქსელი იმიტომ მივუთითე რომ საიტი ათვლას ჰედერიდან იწყებს და არა ანდერლაინიდან.*/
+.section_two_cards_section {
+  display: flex;
+  gap: 20px;
+}
+.card_article_index {
+  padding: 8px 8px 16px;
+  background-color: rgba(44, 66, 70, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  animation: shadow 10s infinite linear;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 8px 4px rgba(5, 188, 202, 0.8);
+    border: 1px solid rgba(5, 188, 202, 1);
+  }
+
+  30% {
+    box-shadow: 0px 0px 8px 4px rgba(76, 5, 202, 0.8);
+    border: 1px solid rgba(76, 5, 202, 0.8);
+  }
+  70% {
+    box-shadow: 0px 0px 8px 4px rgba(202, 76, 5, 0.8);
+    border: 1px solid rgba(202, 76, 5, 0.8);
+  }
+  100% {
+    box-shadow: 0px 0px 8px 4px rgba(5, 188, 202, 0.8);
+    border: 1px solid rgba(5, 188, 202, 0.8);
+  }
+}
+.card_article_index:hover .card_article_index_img {
+  filter: opacity(0.5);
+}
+.card_article_index_img {
+  width: 100%;
+  height: 221px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.card_article_index_section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card_article_index_header {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(217, 217, 217, 1);
+}
+.card_article_index_price_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index_card_price {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(5, 188, 202, 1);
+}
+.index_card_buy_button {
+  width: 58px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(196, 106, 43, 1);
+  box-shadow: 1px 1px 1px  white inset, 1px 1px 1px black;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.index_card_buy_button:active {
+  box-shadow: 1px 1px 1px black inset, 1px 1px 1px white;
+}
+/* footer */
+footer {
+  background-color: rgba(44, 66, 70, 1);
+  padding-block: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 157px;
+}
+.footer_links_section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer_headers_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.footer_headers {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(217, 217, 217, 1);
+}
+hr {
+  width: 80px;
+  border: 0;
+  height: 2px;
+  background-color: rgba(217, 217, 217, 1);
+  margin: 0;
+}
+.footer_nav_ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer_nav_ul_a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(217, 217, 217, 1);
+  transition: all 0.3s ease;
+}
+.for_information{
+  color: rgba(255, 255, 255, 1);
+}
+.footer_nav_ul_a:hover{
+  color: rgba(5, 188, 202, 0.8);
+  text-shadow: 3px 3px 3px  rgba(5, 188, 202, 0.8);
+}
+.footer_social_links_section{
+  display: flex;
+  gap: 16px;
+}
+.social_links{
+  font-size: 32px;
+  color: rgba(217, 217, 217, 1);
+  transition: all 0.3s ease;
+}
+.social_links:hover{
+  color: rgba(5, 188, 202, 0.8);
+  filter: drop-shadow(4px 4px 4px  rgba(5, 188, 202, 0.8));
 }
