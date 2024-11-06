@@ -667,6 +667,9 @@ textarea::placeholder {
 .section_two_buttons{
   width: 48px;
   height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 8px;
   background-color: rgba(5, 188, 202, 1);
