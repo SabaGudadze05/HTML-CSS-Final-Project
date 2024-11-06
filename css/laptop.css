@@ -48,16 +48,49 @@
   .section_two {
     padding: 96px 0 96px 32px;
   }
-  .section_two_cards_section{
+  .section_two_cards_section {
     overflow-x: scroll;
   }
-  .card_article_index{
+  .card_article_index {
     flex: 1 0 272px;
     padding: 0 0 16px;
     gap: 24px;
   }
-  .card_article_index_section{
+  .card_article_index_section {
     margin-inline: 8px;
   }
+  /* catalog page */
 
+  /* catalog secction one */
+  .catalog_section_one {
+    padding: 96px 32px;
+  }
+  .catalog_card_section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+  .seven,
+  .nine,
+  .eight {
+    display: none;
+  }
+  /* contact page */
+
+  /* section_one */
+  .contact_section_one{
+    padding-inline: 32px;
+  }
+  .main_section{
+    width: 100%;
+  }
+  /* formsection */
+  .form_section {
+    width: 100%;
+  }
+  .map_section {
+    width: 100%;
+  }
 }

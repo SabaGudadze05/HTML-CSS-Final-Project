@@ -17,6 +17,52 @@
   .section_two_header {
     margin-bottom: 60px;
   }
+  /* catalog page */
+
+  /* catalog section one */
+  .catalog_section_one {
+    padding: 48px 24px;
+  }
+  .catalog_card_section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 400px);
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
+  }
+  .five,
+  .six {
+    display: none;
+  }
+  /* contact page */
+
+  /* section_one */
+  .contact_section_one {
+   padding: 64px 24px;
+  }
+  .main_section{
+    padding: 16px;
+    flex-direction: column;
+    row-gap: 48px;
+  }
+  .form_section{
+    gap: 24px;
+  }
+  .form_section_header{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .map_section{
+    gap: 24px;
+  }
+  .second_section_buttons_section{
+    gap: 42px;
+  }
+  .iframe_section{
+    height: 200px;
+  }
 }
 
 /* medfia for 680px. 
