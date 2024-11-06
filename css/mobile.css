@@ -39,6 +39,7 @@
   .sort_button_481px{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .page_button, .active{
     width: 52px;
