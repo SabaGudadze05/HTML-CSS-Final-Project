@@ -549,6 +549,9 @@ hr {
   display: flex;
   justify-content: center;
   background-image: url(../imgs/contact_cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /* main_section */
 .main_section {
