@@ -504,12 +504,14 @@ hr {
   align-items: center;
 }
 .page_button {
+  width: 92px;
   height: 40px;
   background-color: rgba(5, 188, 202, 1);
   border: none;
   border-radius: 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-inline: 8px;
   gap: 16px;
   font-size: 16px;
@@ -518,6 +520,7 @@ hr {
   transition: all 0.3s ease;
 }
 .active {
+  width: 121px;
   background-color: rgba(196, 106, 43, 1);
 }
 .page_button_span {
